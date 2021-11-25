@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutEachItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/coinNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0"
+            android:text="BTC"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="/"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/coinNameView"
+            app:layout_constraintStart_toEndOf="@+id/coinNameView"
+            app:layout_constraintTop_toTopOf="@+id/coinNameView" />
+
+        <TextView
+            android:id="@+id/baseCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0"
+            android:text="USDT"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/coinNameView" />
+
+        <TextView
+            android:id="@+id/coinPriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="0.00212"
+            app:layout_constraintStart_toStartOf="@+id/coinNameView"
+            app:layout_constraintTop_toTopOf="@+id/baseCoin" />
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingTop="3dp"
+            android:text="Vol"
+            app:layout_constraintStart_toStartOf="@+id/coinNameView"
+            app:layout_constraintTop_toBottomOf="@+id/coinNameView" />
+
+        <TextView
+            android:id="@+id/percentageChange24hour"
+            android:layout_width="75dp"
+            android:layout_height="24dp"
+            android:background="#FB1236"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:text="+20%"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@+id/coinPriceView"
+            app:layout_constraintTop_toTopOf="@+id/coinPriceView"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

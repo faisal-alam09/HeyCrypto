@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HeyCrypto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crypto_top_list">Top List</string>
+    <string name="crypto_home">Home</string>
+    <string name="crypto_news">News</string>
+</resources>
